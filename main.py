@@ -20,5 +20,5 @@ def root(request: Request):
 def get_map(map_id: str, request: Request):
     return templates.TemplateResponse(
         "map.html",
-        {"request": request, "map_id": map_id, "geojson_path": f"/json/{map_id}.json"},
+        {"request": request, "map_id": map_id, "geojson_path": f"/json/{map_id}.geojson"},
     )
