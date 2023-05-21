@@ -6,7 +6,7 @@ from geojson import Point, Feature, FeatureCollection, dump
 
 
 input_file = 'address/member_list.csv'
-outfile = "out.geojson"
+outfile = "static/json/publisher.geojson"
 makeUrl = "https://msearch.gsi.go.jp/address-search/AddressSearch?q="
 
 def get_point_data(file_name):
@@ -33,18 +33,23 @@ def get_point_data(file_name):
 
     return point_data
 
-point_data = get_point_data(input_file)
-print(point_data)
 
-# Prepare Geojson FeatureCollection
-ft_all = []
-for i, p in enumerate(point_data):
-    lat, lon = p['latitude'], p['longitude']
-    ft = Feature(geometry = Point((lon, lat,)),
-                 properties = {'title': p['title'], 'description': p['description'], 'marker-color': p['color'],
-                               'marker-size': 'medium','stroke': '#ffffff', 'stroke-width': 2})
-    ft_all.append(ft)
-ft_colct = FeatureCollection(ft_all)
+def get_feature_collection(p_data):
+    features = []
+    for p in p_data:
+        lat, lon = p['latitude'], p['longitude']
+        feature = Feature(geometry = Point((lon, lat,)),
+                    properties = {'title': p['title'], 'description': p['description'], 'marker-color': p['color'],
+                                'marker-size': 'medium','stroke': '#ffffff', 'stroke-width': 2})
+        features.append(feature)
+
+    return FeatureCollection(features)
+
+
+point_data = get_point_data(input_file)
+# print(point_data)
+feature_collection = get_feature_collection(point_data)
+
 
 with open(outfile, 'w') as f:
-    dump(ft_colct, f, indent=2)
+    dump(feature_collection, f, indent=2)
