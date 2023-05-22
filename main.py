@@ -16,6 +16,14 @@ def root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
+@app.get("/maps/maplibre.html", response_class=HTMLResponse)
+def get_map(request: Request):
+    return templates.TemplateResponse(
+        "maplibre.html",
+        {"request": request},
+    )
+
+
 @app.get("/maps/{map_id}", response_class=HTMLResponse)
 def get_map(map_id: str, request: Request):
     return templates.TemplateResponse(

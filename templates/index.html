@@ -15,11 +15,9 @@
         'shinjuku': '新宿区',
         'bunkyo': '文京区',
         'taito': '台東区',
-        'sumida': '墨田区',
         'koto': '江東区',
         'shinagawa': '品川区',
         'meguro': '目黒区',
-        'ota': '大田区',
         'setagaya': '世田谷区',
         'shibuya': '渋谷区',
         'nakano': '中野区',
@@ -27,16 +25,16 @@
         'toshima': '豊島区',
         'kita': '北区',
         'arakawa': '荒川区',
-        'itabashi': '板橋区',
         'nerima': '練馬区',
         'adachi': '足立区',
-        'katsushika': '葛飾区',
-        'edogawa': '江戸川区'
     } %}
     {% for ku_en, ku in tokyo_ku_dict.items(): %}
         <div>
           <a href="/maps/{{ ku_en }}_tokyo_publisher">{{ ku }}の出版社</a>
         </div>
     {% endfor %}
+    <div>
+      <a href="/maps/maplibre.html">Maplibre</a>
+    </div>
   </body>
 </html>

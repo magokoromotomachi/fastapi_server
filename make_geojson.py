@@ -6,7 +6,6 @@ from geojson import Point, Feature, FeatureCollection, dump
 
 makeUrl = "https://msearch.gsi.go.jp/address-search/AddressSearch?q="
 input_file = 'address_book/member_list.csv'
-outfile = "static/json/no_tokyo_publisher.geojson"
 tokyo_ku_dict = {
     'chiyoda': '千代田区',
     'chuo': '中央区',
