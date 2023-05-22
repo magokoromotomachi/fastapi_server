@@ -3,8 +3,7 @@
 # package install
 
 ```Console
-$ pip install fastapi
-$ pip install uvicorn
+$ pip install fastapi uvicorn jinja2 requests geojson
 ```
 
 # server start

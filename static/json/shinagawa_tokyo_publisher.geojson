@@ -6,13 +6,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.770508,
-          35.705158
+          139.720718,
+          35.627342
         ]
       },
       "properties": {
-        "title": "\u660e\u77f3\u66f8\u5e97",
-        "description": "\u6771\u4eac\u90fd\u5343\u4ee3\u7530\u533a\u5916\u795e\u75306-9-5",
+        "title": "Gakken",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u897f\u4e94\u53cd\u75302-11-8",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -24,13 +24,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.753296,
-          35.697464
+          139.727097,
+          35.625305
         ]
       },
       "properties": {
-        "title": "\u3042\u304b\u306d\u66f8\u623f",
-        "description": "\u6771\u4eac\u90fd\u5343\u4ee3\u7530\u533a\u897f\u795e\u75303-2-1 \u5343\u4ee3\u7530\u30d5\u30a1\u30fc\u30b9\u30c8\u30d3\u30eb\u5357\u99281\u968e",
+        "title": "\u304f\u3082\u3093\u51fa\u7248",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u6771\u4e94\u53cd\u75302-10-2\u6771\u4e94\u53cd\u7530\u30b9\u30af\u30a8\u30a211\u968e",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -42,13 +42,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.748993,
-          35.700382
+          139.731201,
+          35.619953
         ]
       },
       "properties": {
-        "title": "\u79cb\u7530\u66f8\u5e97",
-        "description": "\u6771\u4eac\u90fd\u5343\u4ee3\u7530\u533a\u98ef\u7530\u6a4b2\u201010\u20108",
+        "title": "\u30b5\u30f3\u30ea\u30aa",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u5927\u5d0e1\u201011-1",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -60,13 +60,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.742279,
-          35.707882
+          139.716156,
+          35.633621
         ]
       },
       "properties": {
-        "title": "\u671d\u5009\u66f8\u5e97",
-        "description": "\u6771\u4eac\u90fd\u65b0\u5bbf\u533a\u65b0\u5c0f\u5ddd\u753a6\u201029",
+        "title": "CCC\u30e1\u30c7\u30a3\u30a2\u30cf\u30a6\u30b9",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u4e0a\u5927\u5d0e3-1-1\u76ee\u9ed2\u30bb\u30f3\u30c8\u30e9\u30eb\u30b9\u30af\u30a8\u30a2",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -78,13 +78,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.719574,
-          35.6917
+          139.717377,
+          35.63327
         ]
       },
       "properties": {
-        "title": "\u65ed\u5c4b\u51fa\u7248",
-        "description": "\u6771\u4eac\u90fd\u65b0\u5bbf\u533a\u611b\u4f4f\u753a23-2\u3000\uff8d\uff9e\uff99\uff6f\uff78\uff7d\u65b0\u5bbf\u30d3\u30eb\u2161",
+        "title": "\u4e3b\u5a66\u306e\u53cb\u793e",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u4e0a\u5927\u5d0e3-1-11\u3000\u76ee\u9ed2\u30bb\u30f3\u30c8\u30e9\u30eb\u30b9\u30af\u30a8\u30a2",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -96,13 +96,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.73349,
-          35.710384
+          139.716156,
+          35.633621
         ]
       },
       "properties": {
-        "title": "\u660e\u65e5\u9999\u51fa\u7248\u793e",
-        "description": "\u6771\u4eac\u90fd\u6587\u4eac\u533a\u6c34\u90532\u201011\u20105",
+        "title": "\u5fb3\u9593\u66f8\u5e97",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u4e0a\u5927\u5d0e3-1-1",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -114,13 +114,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.903854,
-          35.826866
+          139.730057,
+          35.591
         ]
       },
       "properties": {
-        "title": "\u6893\u51fa\u7248\u793e",
-        "description": "\u5343\u8449\u770c\u677e\u6238\u5e02\u65b0\u677e\u62387-65",
+        "title": "\u65e5\u5916\u30a2\u30bd\u30b7\u30a8\u30fc\u30c4",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u5357\u5927\u4e956-16-16",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -132,13 +132,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.725174,
-          35.706356
+          139.720718,
+          35.627342
         ]
       },
       "properties": {
-        "title": "\u3042\u3059\u306a\u308d\u66f8\u623f",
-        "description": "\u6771\u4eac\u90fd\u65b0\u5bbf\u533a\u65e9\u7a32\u7530\u9db4\u5dfb\u753a551-4",
+        "title": "\u6587\u7406",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u897f\u4e94\u53cd\u75302-11-8",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
@@ -150,31 +150,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.737015,
-          35.717804
+          139.721237,
+          35.624844
         ]
       },
       "properties": {
-        "title": "\u30a2\u30ea\u30b9\u9928",
-        "description": "\u6771\u4eac\u90fd\u6587\u4eac\u533a\u5c0f\u77f3\u5ddd5-5-5",
-        "marker-color": "#ff0000",
-        "marker-size": "medium",
-        "stroke": "#ffffff",
-        "stroke-width": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.739944,
-          35.698498
-        ]
-      },
-      "properties": {
-        "title": "\u5bb6\u306e\u5149\u5354\u4f1a",
-        "description": "\u6771\u4eac\u90fd\u65b0\u5bbf\u533a\u5e02\u8c37\u8239\u6cb3\u539f\u753a11",
+        "title": "\u5149\u6751\u6559\u80b2\u56f3\u66f8",
+        "description": "\u6771\u4eac\u90fd\u54c1\u5ddd\u533a\u897f\u4e94\u53cd\u75302\u201027\u20104",
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "stroke": "#ffffff",
