@@ -51,13 +51,13 @@ def get_point_data(file_name, selected_ku):
                     continue
 
                 print(f'Geolocation found: {name}')
-                lng_lat = response.json()[0]["geometry"]["coordinates"]
-                if lng_lat and len(lng_lat) == 2:
+                lon_lat = response.json()[0]["geometry"]["coordinates"]
+                if lon_lat and len(lon_lat) == 2:
                     point_data.append({
                         'title': name,
                         'description': address,
-                        'latitude': lng_lat[1],
-                        'longitude': lng_lat[0],
+                        'longitude': lon_lat[0],
+                        'latitude': lon_lat[1],
                         'color': '#ff0000'
                     })
                 time.sleep(1)
@@ -69,7 +69,7 @@ def get_feature_collection(p_data):
     features = []
     for p in p_data:
         lat, lon = p['latitude'], p['longitude']
-        feature = Feature(geometry=Point((lon, lat,)),
+        feature = Feature(geometry=Point((lon, lat)),
                           properties={'title': p['title'], 'description': p['description'], 'marker-color': p['color'],
                                       'marker-size': 'medium', 'stroke': '#ffffff', 'stroke-width': 2})
         features.append(feature)
