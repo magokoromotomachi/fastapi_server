@@ -2,44 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>営業地図</title>
+    <title>東京の出版社</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- page content -->
-    <h2>さいたま市居宅地図</h2>
+    <h2>東京の出版社</h2>
+    {% set tokyo_ku_dict = {
+        'chiyoda': '千代田区',
+        'chuo': '中央区',
+        'minato': '港区',
+        'shinjuku': '新宿区',
+        'bunkyo': '文京区',
+        'taito': '台東区',
+        'koto': '江東区',
+        'shinagawa': '品川区',
+        'meguro': '目黒区',
+        'setagaya': '世田谷区',
+        'shibuya': '渋谷区',
+        'nakano': '中野区',
+        'suginami': '杉並区',
+        'toshima': '豊島区',
+        'kita': '北区',
+        'arakawa': '荒川区',
+        'nerima': '練馬区',
+        'adachi': '足立区',
+    } %}
+    {% for ku_en, ku in tokyo_ku_dict.items(): %}
+        <div>
+          <a href="/maps/{{ ku_en }}_tokyo_publisher">{{ ku }}の出版社</a>
+        </div>
+    {% endfor %}
     <div>
-      <a href="/maps/nishi_saitama_city_kyotaku">西区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/kita_saitama_city_kyotaku">北区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/omiya_saitama_city_kyotaku">大宮区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/minuma_saitama_city_kyotaku">見沼区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/chuo_saitama_city_kyotaku">中央区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/sakura_saitama_city_kyotaku">桜区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/urawa_saitama_city_kyotaku">浦和区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/minami_saitama_city_kyotaku">南区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/midori_saitama_city_kyotaku">緑区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/iwatsuki_saitama_city_kyotaku">岩槻区居宅地図</a>
-    </div>
-    <div>
-      <a href="/maps/saitama_city_kyotaku">すべての居宅地図</a>
+      <a href="/maps/maplibre.html">Maplibre</a>
     </div>
   </body>
 </html>

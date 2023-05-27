@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.711258,
+          35.62862
+        ]
+      },
+      "properties": {
+        "title": "\u7d00\u4f0a\u570b\u5c4b\u66f8\u5e97\u51fa\u7248\u90e8",
+        "description": "\u6771\u4eac\u90fd\u76ee\u9ed2\u533a\u4e0b\u76ee\u9ed23-7-10",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.689667,
+          35.649498
+        ]
+      },
+      "properties": {
+        "title": "\u6771\u4eac\u5b66\u53c2",
+        "description": "\u6771\u4eac\u90fd\u76ee\u9ed2\u533a\u6771\u5c71\uff12-\uff16-\uff14",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680527,
+          35.659405
+        ]
+      },
+      "properties": {
+        "title": "\u6771\u4eac\u5927\u5b66\u51fa\u7248\u4f1a",
+        "description": "\u6771\u4eac\u90fd\u76ee\u9ed2\u533a\u99d2\u58344-5-29",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.695251,
+          35.645634
+        ]
+      },
+      "properties": {
+        "title": "\u5317\u9686\u9928",
+        "description": "\u6771\u4eac\u90fd\u76ee\u9ed2\u533a\u4e0a\u76ee\u9ed23-17-8",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Maplibre</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div id='map' style='width: 900px; height: 600px;'></div>
+    <script>
+        var map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
+            center: [139.745, 35.6585], // starting position [lng, lat]
+            zoom: 5, // starting zoom
+            preserveDrawingBuffer: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.782379,
+          35.703739
+        ]
+      },
+      "properties": {
+        "title": "\u91d1\u306e\u661f\u793e",
+        "description": "\u6771\u4eac\u90fd\u53f0\u6771\u533a\u5c0f\u5cf61\u20104\u20103",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79686,
+          35.709702
+        ]
+      },
+      "properties": {
+        "title": "\u4e09\u5b9d\u51fa\u7248",
+        "description": "\u6771\u4eac\u90fd\u53f0\u6771\u533a\u96f7\u95802-3-10",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.778656,
+          35.703518
+        ]
+      },
+      "properties": {
+        "title": "\u65b0\u661f\u51fa\u7248\u793e",
+        "description": "\u6771\u4eac\u90fd\u53f0\u6771\u533a\u53f0\u67712-24-10",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790955,
+          35.703079
+        ]
+      },
+      "properties": {
+        "title": "\u7b51\u6469\u66f8\u623f",
+        "description": "\u6771\u4eac\u90fd\u53f0\u6771\u533a\u8535\u524d2\u20105\u20103",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.781342,
+          35.704922
+        ]
+      },
+      "properties": {
+        "title": "\u4e2d\u592e\u6cd5\u898f\u51fa\u7248",
+        "description": "\u6771\u4eac\u90fd\u53f0\u6771\u533a\u53f0\u67713-29-1",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    }
+  ]
+}

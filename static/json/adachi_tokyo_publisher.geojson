@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.806381,
+          35.748764
+        ]
+      },
+      "properties": {
+        "title": "\u6771\u4eac\u96fb\u6a5f\u5927\u5b66\u51fa\u7248\u5c40",
+        "description": "\u6771\u4eac\u90fd\u8db3\u7acb\u533a\u5343\u4f4f\u65ed\u753a5",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    }
+  ]
+}
