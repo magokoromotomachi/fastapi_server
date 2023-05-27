@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777481,
+          35.738377
+        ]
+      },
+      "properties": {
+        "title": "\u535a\u6587\u9928\u65b0\u793e",
+        "description": "\u6771\u4eac\u90fd\u8352\u5ddd\u533a\u8352\u5ddd5-9-7",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777481,
+          35.738377
+        ]
+      },
+      "properties": {
+        "title": "\u535a\u53cb\u793e",
+        "description": "\u6771\u4eac\u90fd\u8352\u5ddd\u533a\u8352\u5ddd5-9-7",
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "stroke": "#ffffff",
+        "stroke-width": 2
+      }
+    }
+  ]
+}
