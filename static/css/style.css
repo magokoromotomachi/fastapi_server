@@ -1,4 +1,9 @@
-main, body, .geolonia {
+main, body {
+    width: 100%;
+    height: 100%;
+}
+
+.geolonia {
     width: 1920px;
     height: 1080px;
 }

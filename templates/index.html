@@ -3,38 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>東京の出版社</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
   </head>
   <body>
-    <!-- page content -->
-    <h2>東京の出版社</h2>
-    {% set tokyo_ku_dict = {
-        'chiyoda': '千代田区',
-        'chuo': '中央区',
-        'minato': '港区',
-        'shinjuku': '新宿区',
-        'bunkyo': '文京区',
-        'taito': '台東区',
-        'koto': '江東区',
-        'shinagawa': '品川区',
-        'meguro': '目黒区',
-        'setagaya': '世田谷区',
-        'shibuya': '渋谷区',
-        'nakano': '中野区',
-        'suginami': '杉並区',
-        'toshima': '豊島区',
-        'kita': '北区',
-        'arakawa': '荒川区',
-        'nerima': '練馬区',
-        'adachi': '足立区',
-    } %}
     {% for ku_en, ku in tokyo_ku_dict.items(): %}
         <div>
-          <a href="/maps/{{ ku_en }}_tokyo_publisher">{{ ku }}の出版社</a>
+          <a href="/maps/{{ ku_en }}_tokyo_publisher.html">{{ ku }}の出版社</a>
         </div>
     {% endfor %}
-    <div>
+    <!-- <div>
       <a href="/maps/maplibre.html">Maplibre</a>
-    </div>
+    </div> -->
   </body>
 </html>
