@@ -6,6 +6,8 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
     <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+    <link href='https://watergis.github.io/maplibre-gl-export/maplibre-gl-export.css' rel='stylesheet' />
+    <script src="https://watergis.github.io/maplibre-gl-export/maplibre-gl-export.js"></script>
 </head>
 <body>
     <div id='map' style='width: 900px; height: 600px;'></div>
@@ -14,9 +16,19 @@
             container: 'map',
             style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
             center: [139.745, 35.6585], // starting position [lng, lat]
-            zoom: 5, // starting zoom
+            zoom: 10, // starting zoom
             preserveDrawingBuffer: true
         });
+
+        map.addControl(new MaplibreExportControl({
+            PageSize: Size.A4,
+            PageOrientation: PageOrientation.Portrait,
+            Format: Format.PNG,
+            DPI: DPI[96],
+            //Crosshair: true,
+            PrintableArea: true,
+            Local: 'en'
+        }), 'top-right');
     </script>
 </body>
 </html>

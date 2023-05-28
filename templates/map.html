@@ -16,5 +16,17 @@
 
     <script type="text/javascript" src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
     <script type="text/javascript" src="/static/js/map_export_bundle.js"></script>
-</body>
+    
+    <script>
+        map.addControl(new MaplibreExportControl({
+            PageSize: Size.A4,
+            PageOrientation: PageOrientation.Portrait,
+            Format: Format.PNG,
+            DPI: DPI[96],
+            //Crosshair: true,
+            PrintableArea: true,
+            Local: 'en'
+        }), 'top-right');
+    </script>
+</body>]
 </html>
