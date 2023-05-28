@@ -8,6 +8,11 @@ main, body {
     height: 1080px;
 }
 
+#map {
+    width: 1920px;
+    height: 1080px;
+}
+
 /*#wide-map {*/
 /*    width: 7680px;*/
 /*    height: 4320px;*/

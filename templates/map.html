@@ -8,12 +8,13 @@
 <body>
 {#    <p>{{ url_for('static', path=geojson_path) }}</p>#}
     <div
-            class="geolonia"
+            id="map"
             data-geojson="{{ geojson_path }}"
             data-cluster="off"
             data-fullscreen-control="on"
     ></div>
 
     <script type="text/javascript" src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+    <script type="text/javascript" src="/static/js/map_export_bundle.js"></script>
 </body>
 </html>
