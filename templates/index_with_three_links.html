@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>東京の出版社</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    {% for ku_en, ku in tokyo_ku_dict.items(): %}
+        <div>
+          <a href="/maps/{{ ku_en }}_tokyo_publisher.html">{{ ku }}の出版社</a>
+        </div>
+    {% endfor %}
+    <div>
+      <a href="/maps/maplibre.html">Maplibre</a>
+    </div>
+  </body>
+</html>

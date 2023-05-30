@@ -3,10 +3,23 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
-from make_geojson import tokyo_ku_dict
+from fastapi.middleware.cors import CORSMiddleware
+from convert_to_geojsons import tokyo_ku_dict
 
 
 app = FastAPI()
+origins = [
+    "http://127.0.0.1:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 templates = Jinja2Templates(directory="templates")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

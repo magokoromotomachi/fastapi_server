@@ -1,34 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Maplibre</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
-    <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
-    <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
-    <link href='https://watergis.github.io/maplibre-gl-export/maplibre-gl-export.css' rel='stylesheet' />
-    <script src="https://watergis.github.io/maplibre-gl-export/maplibre-gl-export.js"></script>
+<meta charset="utf-8" />
+<title>Draw GeoJSON points</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://unpkg.com/maplibre-gl@3.0.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@3.0.1/dist/maplibre-gl.css" rel="stylesheet" />
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
 </head>
 <body>
-    <div id='map' style='width: 900px; height: 600px;'></div>
-    <script>
-        var map = new maplibregl.Map({
-            container: 'map',
-            style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
-            center: [139.745, 35.6585], // starting position [lng, lat]
-            zoom: 10, // starting zoom
-            preserveDrawingBuffer: true
-        });
+<div id="map"></div>
+<script>
+    var map = new maplibregl.Map({
+        container: 'map',
+        style:
+            'https://api.maptiler.com/maps/positron/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+        center: [139.652145, 35.658802],
+        zoom: 13
+    });
 
-        map.addControl(new MaplibreExportControl({
-            PageSize: Size.A4,
-            PageOrientation: PageOrientation.Portrait,
-            Format: Format.PNG,
-            DPI: DPI[96],
-            //Crosshair: true,
-            PrintableArea: true,
-            Local: 'en'
-        }), 'top-right');
-    </script>
+    map.on('load', function () {
+        // Add an image to use as a custom marker
+        map.loadImage(
+            'https://maplibre.org/maplibre-gl-js-docs/assets/osgeo-logo.png',
+            function (error, image) {
+                if (error) throw error;
+                map.addImage('custom-marker', image);
+                // Add a GeoJSON source with 15 points
+                map.addSource('conferences', {
+                    'type': 'geojson',
+                    'data': "/static/json/H27-kuritu_tyuugattukou.geojson"
+                });
+
+                // Add a symbol layer
+                map.addLayer({
+                    'id': 'conferences',
+                    'type': 'symbol',
+                    'source': 'conferences',
+                    'layout': {
+                        'icon-image': 'custom-marker',
+                        // get the year from the source's "year" property
+                        'text-field': ['get', 'title'],
+                        'text-font': [
+                            'Open Sans Semibold',
+                            'Arial Unicode MS Bold'
+                        ],
+                        'text-offset': [0, 1.25],
+                        'text-anchor': 'top'
+                    }
+                });
+            }
+        );
+    });
+</script>
+
 </body>
 </html>
